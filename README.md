@@ -1,7 +1,6 @@
 ## Subway Swap Decentralized Crypto Exchange
 Welcome to the Decentralized Crypto Swap Exchange repository! This wiki provides comprehensive information about the project, including its purpose, features, architecture, and usage. Whether you're a developer, user, or contributor, you'll find the necessary information here.
 
-Sure! Here's a detailed wiki for your decentralized crypto swap exchange repository on GitHub:
 
 ---
 
