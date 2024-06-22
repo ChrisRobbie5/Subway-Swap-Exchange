@@ -1,15 +1,3 @@
-<script src="https://widget.crowdswap.org/loadAssets.js"></script>
-<crowdswap-swap-widget
-  id="crowdswapWidget"
-  config='{
-    "fromTokenAddress":"0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
-    "fromChainId":1,
-    "toTokenAddress":"0xba2ae424d960c26247dd6c32edc70b295c744c43",
-    "toChainId":56,
-    "theme":"light",
-    "affiliateId":"https://app.crowdswap.org/exchange?referralId=subwayswap"
-}'></crowdswap-swap-widget>
-
 <button class="button" onclick="window.location.href='https://subwayswap.com'">
   Home
   <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
@@ -20,11 +8,8 @@
     ></path>
   </svg>
 </button>
-
 <script>
-  // Add the styles for the button
-  const style = document.createElement('style');
-  style.textContent = `
+  const buttonStyle = `
     .button {
       position: fixed;
       top: 10px;
@@ -97,6 +82,9 @@
       }
     }
   `;
+
+  const style = document.createElement('style');
+  style.textContent = buttonStyle;
   document.head.appendChild(style);
 </script>
 
