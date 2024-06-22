@@ -2,10 +2,10 @@
   $text-shadow: ();
   @for $i from 0 through $count {
     $text-shadow: $text-shadow,
-                 (-.5 + (random()) * 3) + em
-                 (-.5 + (random()) * 3) + em
+                 (-.5+(random()) * 3) + em
+                 (-.5+(random()) * 3) + em
                  7px
-                 hsla(random() * 360, 100%, 50%, .9);
+                 hsla(random() * 360, 100%, 50%,.9);
   }
   text-shadow: $text-shadow;
 }
@@ -16,17 +16,14 @@ html {
   background: #123;
 }
 
-body,
-head {
+body, head {
   display: block;
   font-size: 52px;
   color: transparent;
 }
 
-head::before,
-head::after,
-body::before,
-body::after {
+head::before, head::after,
+body::before, body::after {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -36,6 +33,7 @@ body::after {
   mix-blend-mode: screen;
   animation: 44s -27s move infinite ease-in-out alternate;
 }
+
 
 body::before {
   @include dots(40);
@@ -60,6 +58,7 @@ head::after {
   animation-duration: 41s;
   animation-delay: -19s;
 }
+
 
 @keyframes move {
   from {
