@@ -175,7 +175,3 @@ For any questions, issues, or suggestions, please reach out to us:
 - **GitHub Issues**: [link to issues page]
 
 Thank you for using Subway Swap! We hope you find it useful and look forward to your contributions.
-
----
-
-Feel free to adjust the details to fit your specific project and preferences. This wiki provides a thorough overview of the project, making it easier for users and contributors to understand and engage with it.
