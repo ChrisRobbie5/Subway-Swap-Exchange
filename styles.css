@@ -1,54 +1,49 @@
-// styles.scss
-
-.background-wrapper {
-  @mixin dots($count) {
-    $text-shadow: ();
-    @for $i from 0 through $count {
-      $text-shadow: $text-shadow,
-                    (-.5+(random()) * 3) + em
-                    (-.5+(random()) * 3) + em
-                    7px
-                    hsla(random() * 360, 100%, 50%,.9);
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
     }
-    text-shadow: $text-shadow;
-  }
-
-  html {
-    font: 5vmin/1.3 Serif;
-    overflow: hidden;
-    background: #123;
-  }
-
-  body, head {
-    display: block;
-    font-size: 52px;
-    color: transparent;
-  }
-
-  head::before, head::after,
-  body::before, body::after {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 3em;
-    height: 3em;
-    content: '.';
-    mix-blend-mode: screen;
-    animation: 44s -27s move infinite ease-in-out alternate;
-  }
-
-  body::before {
-    @include dots(40);
-    animation-duration: 44s;
-    animation-delay: -27s;
-  }
-
-  @keyframes move {
-    from {
-      transform: rotate(0deg) scale(12) translateX(-20px);
-    }
-    to {
-      transform: rotate(360deg) scale(18) translateX(20px);
-    }
-  }
 }
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #1b0538;
+    overflow: hidden;
+}
+
+.background span {
+    width: 19vmin;
+    height: 19vmin;
+    border-radius: 19vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 4s; /* Note: corrected from '4' to '4s' */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.background span:nth-child(1) {
+    color: #FFACAC;
+    top: 39%;
+    left: 7%;
+    animation-duration: 386s;
+    animation-delay: -149s;
+    transform-origin: 7vw 10vh;
+    box-shadow: -38vmin 0 4.949319140077166vmin currentColor;
+}
+
+.background span:nth-child(2) {
+    color: #583C87;
+    top: 91%;
+    left: 59%;
+    animation-duration: 70s;
+    animation-delay: -422s;
+    transform-origin: 9vw 19vh;
+    box-shadow: 38vmin 0 5.266429400732012vmin currentColor;
+}
+
+/* Add more styles for other span elements as needed */
