@@ -1,4 +1,4 @@
-/* CSS for the animated background */
+/* Animated background */
 @keyframes move {
     100% {
         transform: translate3d(0, 0, 1px) rotate(360deg);
@@ -13,6 +13,7 @@
     left: 0;
     background: #1b0538;
     overflow: hidden;
+    z-index: -1; /* Ensure the background is behind other content */
 }
 
 .background span {
@@ -21,40 +22,101 @@
     border-radius: 19vmin;
     backface-visibility: hidden;
     position: absolute;
-    animation: move;
-    animation-duration: 4s; /* You can adjust animation duration here */
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: move infinite linear;
 }
 
+/* Adjusted animation durations for faster movement */
 .background span:nth-child(1) {
-    color: #FFACAC;
-    top: 39%;
-    left: 7%;
-    animation-duration: 386s; /* Adjust animation duration and delay as needed */
+    animation-duration: 20s; /* Adjusted from 386s */
     animation-delay: -149s;
-    transform-origin: 7vw 10vh;
-    box-shadow: -38vmin 0 4.949319140077166vmin currentColor;
 }
 
 .background span:nth-child(2) {
-    color: #583C87;
-    top: 91%;
-    left: 59%;
-    animation-duration: 70s; /* Adjust animation duration and delay as needed */
-    animation-delay: -322s;
-    transform-origin: 9vw 19vh;
-    box-shadow: 38vmin 0 5.266429400732012vmin currentColor;
+    animation-duration: 20s; /* Adjusted from 70s */
+    animation-delay: -422s;
 }
 
 .background span:nth-child(3) {
-    color: #583C87;
-    top: 52%;
-    left: 16%;
-    animation-duration: 387s; /* Adjust animation duration and delay as needed */
+    animation-duration: 20s; /* Adjusted from 387s */
     animation-delay: -156s;
-    transform-origin: -15vw -15vh;
-    box-shadow: -38vmin 0 5.445922335883834vmin currentColor;
 }
 
-/* Add styles for other span elements similarly */
+.background span:nth-child(4) {
+    animation-duration: 20s; /* Adjusted from 461s */
+    animation-delay: -70s;
+}
+
+.background span:nth-child(5) {
+    animation-duration: 20s; /* Adjusted from 444s */
+    animation-delay: -411s;
+}
+
+.background span:nth-child(6) {
+    animation-duration: 20s; /* Adjusted from 342s */
+    animation-delay: -195s;
+}
+
+.background span:nth-child(7) {
+    animation-duration: 20s; /* Adjusted from 311s */
+    animation-delay: -289s;
+}
+
+.background span:nth-child(8) {
+    animation-duration: 20s; /* Adjusted from 152s */
+    animation-delay: -204s;
+}
+
+.background span:nth-child(9) {
+    animation-duration: 20s; /* Adjusted from 386s */
+    animation-delay: -452s;
+}
+
+.background span:nth-child(10) {
+    animation-duration: 20s; /* Adjusted from 409s */
+    animation-delay: -68s;
+}
+
+.background span:nth-child(11) {
+    animation-duration: 20s; /* Adjusted from 105s */
+    animation-delay: -143s;
+}
+
+.background span:nth-child(12) {
+    animation-duration: 20s; /* Adjusted from 370s */
+    animation-delay: -214s;
+}
+
+.background span:nth-child(13) {
+    animation-duration: 20s; /* Adjusted from 382s */
+    animation-delay: -343s;
+}
+
+.background span:nth-child(14) {
+    animation-duration: 20s; /* Adjusted from 429s */
+    animation-delay: -368s;
+}
+
+.background span:nth-child(15) {
+    animation-duration: 20s; /* Adjusted from 31s */
+    animation-delay: -408s;
+}
+
+.background span:nth-child(16) {
+    animation-duration: 20s; /* Adjusted from 337s */
+    animation-delay: -303s;
+}
+
+.background span:nth-child(17) {
+    animation-duration: 20s; /* Adjusted from 341s */
+    animation-delay: -247s;
+}
+
+.background span:nth-child(18) {
+    animation-duration: 20s; /* Adjusted from 350s */
+    animation-delay: -78s;
+}
+
+.background span:nth-child(19) {
+    animation-duration: 20s; /* Adjusted from 96s */
+    animation-delay: -313s;
+}
