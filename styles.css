@@ -1,41 +1,60 @@
 /* CSS for the animated background */
 @keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
 }
 
 .background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: #1b0538;
-  overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #1b0538;
+    overflow: hidden;
 }
 
 .background span {
-  width: 19vmin;
-  height: 19vmin;
-  border-radius: 19vmin;
-  backface-visibility: hidden;
-  position: absolute;
-  animation: move;
-  animation-duration: 4s; /* Adjust animation duration as needed */
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+    width: 19vmin;
+    height: 19vmin;
+    border-radius: 19vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 4s; /* You can adjust animation duration here */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-/* Additional styles for each span element */
 .background span:nth-child(1) {
-  color: #FFACAC;
-  top: 39%;
-  left: 7%;
-  animation-duration: 386s; /* Adjust animation duration as needed */
-  animation-delay: -149s; /* Adjust animation delay as needed */
-  transform-origin: 7vw 10vh; /* Adjust transform origin as needed */
-  box-shadow: -38vmin 0 4.949319140077166vmin currentColor;
+    color: #FFACAC;
+    top: 39%;
+    left: 7%;
+    animation-duration: 386s; /* Adjust animation duration and delay as needed */
+    animation-delay: -149s;
+    transform-origin: 7vw 10vh;
+    box-shadow: -38vmin 0 4.949319140077166vmin currentColor;
+}
+
+.background span:nth-child(2) {
+    color: #583C87;
+    top: 91%;
+    left: 59%;
+    animation-duration: 70s; /* Adjust animation duration and delay as needed */
+    animation-delay: -422s;
+    transform-origin: 9vw 19vh;
+    box-shadow: 38vmin 0 5.266429400732012vmin currentColor;
+}
+
+.background span:nth-child(3) {
+    color: #583C87;
+    top: 52%;
+    left: 16%;
+    animation-duration: 387s; /* Adjust animation duration and delay as needed */
+    animation-delay: -156s;
+    transform-origin: -15vw -15vh;
+    box-shadow: -38vmin 0 5.445922335883834vmin currentColor;
 }
 
 /* Add styles for other span elements similarly */
