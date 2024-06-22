@@ -1,15 +1,3 @@
-@mixin dots($count) {
-  $text-shadow: ();
-  @for $i from 0 through $count {
-    $text-shadow: $text-shadow,
-                 (-.5+(random()) * 3) + em
-                 (-.5+(random()) * 3) + em
-                 7px
-                 hsla(random() * 360, 100%, 50%,.9);
-  }
-  text-shadow: $text-shadow;
-}
-
 html {
   font: 5vmin/1.3 Serif;
   overflow: hidden;
@@ -29,42 +17,16 @@ body::before, body::after {
   left: 50%;
   width: 3em;
   height: 3em;
-  content: '.';
+  content: ".";
   mix-blend-mode: screen;
   animation: 44s -27s move infinite ease-in-out alternate;
 }
 
-
 body::before {
-  @include dots(40);
+  text-shadow: 1.3917598842em 1.5436250135em 7px rgba(0, 255, 137, 0.9), 0.6974223765em 0.4119872857em 7px rgba(140, 255, 0, 0.9), 0.1926054813em 0.7011541286em 7px rgba(255, 0, 33, 0.9), 0.2604619967em 0.1676238214em 7px rgba(30, 0, 255, 0.9), 1.2560225761em -0.0094243013em 7px rgba(0, 128, 255, 0.9), 1.9457094991em 1.988391007em 7px rgba(180, 255, 0, 0.9), 1.2662365888em -0.4404515109em 7px rgba(186, 255, 0, 0.9), 2.4550046237em -0.3952988047em 7px rgba(255, 172, 0, 0.9), 1.2723134208em 2.3071564641em 7px rgba(0, 255, 246, 0.9), 1.2106217158em 2.0768798132em 7px rgba(255, 0, 102, 0.9), 1.8134517452em 1.3393483341em 7px rgba(60, 255, 0, 0.9), 2.4650126101em 0.8892178843em 7px rgba(255, 0, 168, 0.9), 2.4982710182em 2.1064683529em 7px rgba(181, 0, 255, 0.9), 1.3874600115em 1.1207125984em 7px rgba(255, 0, 199, 0.9), 0.7772608586em 2.1815396565em 7px rgba(0, 62, 255, 0.9), 1.1511338173em 1.6848264655em 7px rgba(255, 45, 0, 0.9), 0.6701944604em 2.2925549302em 7px rgba(255, 126, 0, 0.9), 1.4952731764em 0.7865636908em 7px rgba(255, 0, 253, 0.9), 2.0863713243em 2.4477180056em 7px rgba(0, 157, 255, 0.9), 1.9481425514em 1.2347039569em 7px rgba(93, 0, 255, 0.9), 0.6589847682em -0.0694246346em 7px rgba(0, 65, 255, 0.9), 0.6492167172em -0.3218276684em 7px rgba(136, 0, 255, 0.9), 0.6467733452em 0.7962972422em 7px rgba(255, 0, 213, 0.9), 0.0213014913em 1.9823869969em 7px rgba(0, 68, 255, 0.9), 0.7142607576em 0.7344175227em 7px rgba(255, 0, 250, 0.9), 0.1665294872em 0.0984140156em 7px rgba(97, 255, 0, 0.9), 2.4359687146em 2.4783457243em 7px rgba(255, 148, 0, 0.9), 2.2199441404em 1.4921472126em 7px rgba(255, 0, 72, 0.9), 2.286914844em 0.6552261663em 7px rgba(255, 0, 163, 0.9), 1.5267133116em 0.0737243194em 7px rgba(255, 155, 0, 0.9), 0.841102847em 1.8946775158em 7px rgba(255, 190, 0, 0.9), 1.6687181298em 1.1850506646em 7px rgba(163, 0, 255, 0.9), 0.0255482417em 1.8119859168em 7px rgba(255, 31, 0, 0.9), -0.4337623933em 1.7494416528em 7px rgba(168, 255, 0, 0.9), 1.3513279342em 1.3645026327em 7px rgba(95, 0, 255, 0.9), 0.3440637928em 1.575455164em 7px rgba(255, 0, 204, 0.9), 1.8598284651em 2.2138114987em 7px rgba(0, 213, 255, 0.9), 0.4331391516em 0.5178524085em 7px rgba(255, 0, 109, 0.9), 0.3481465446em 1.7345060174em 7px rgba(0, 255, 174, 0.9), 1.949562472em 0.485125649em 7px rgba(15, 0, 255, 0.9), -0.3534162188em 0.9185233759em 7px rgba(0, 64, 255, 0.9);
   animation-duration: 44s;
   animation-delay: -27s;
 }
 
 body::after {
-  @include dots(40);
-  animation-duration: 43s;
-  animation-delay: -32s;
-}
-
-head::before {
-  @include dots(40);
-  animation-duration: 42s;
-  animation-delay: -23s;
-}
-
-head::after {
-  @include dots(40);
-  animation-duration: 41s;
-  animation-delay: -19s;
-}
-
-
-@keyframes move {
-  from {
-    transform: rotate(0deg) scale(12) translateX(-20px);
-  }
-  to {
-    transform: rotate(360deg) scale(18) translateX(20px);
-  }
-}
+  text-shadow: 0.6760037181em 0.3073798
